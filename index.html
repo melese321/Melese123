@@ -360,7 +360,7 @@ nav a:after {
             border-radius: 4px;
         }
 
-        /* Contact Section */
+        
         .contact-content {
             display: flex;
             gap: 50px;
@@ -432,7 +432,7 @@ nav a:after {
             resize: vertical;
         }
 
-        /* Footer */
+    
         footer {
             background-color: var(--primary-color);
             color: white;
@@ -557,7 +557,7 @@ nav a:after {
     </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
+    
     <header>
         <div class="container header-container">
             <a href="#home" class="logo">Melese<span>Birhanu</span></a>
@@ -577,7 +577,7 @@ nav a:after {
         </div>
     </header>
 
-    <!-- Hero Section -->
+
     <section class="hero" id="home">
         <div class="container hero-content">
             <div class="hero-text">
@@ -597,7 +597,7 @@ nav a:after {
         </div>
     </section>
 
-    <!-- About Section -->
+
     <section id="about">
         <div class="container">
             <div class="section-title">
@@ -658,7 +658,6 @@ nav a:after {
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-title">
@@ -758,7 +757,7 @@ nav a:after {
         </div>
     </section>
 
-    <!-- Contact Section -->
+
     <section id="contact">
         <div class="container">
             <div class="section-title">
@@ -839,7 +838,7 @@ nav a:after {
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -869,7 +868,7 @@ nav a:after {
     </footer>
 
     <script>
-        // Mobile menu toggle
+        
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navMenu = document.getElementById('navMenu');
         
@@ -880,7 +879,6 @@ nav a:after {
                 : '<i class="fas fa-bars"></i>';
         });
         
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -888,7 +886,6 @@ nav a:after {
             });
         });
         
-        // Contact form submission
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -901,18 +898,17 @@ const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
-            // In a real application, you would send this data to a server
-            // For this demo, we'll just show an alert
+            
             alert(Thank you, ${name}! Your message has been received. I'll get back to you at ${email} as soon as possible.);
             
-            // Reset form
+            
             contactForm.reset();
         });
         
-        // Update copyright year
+        
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         
-        // Header scroll effect
+        
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -927,5 +923,6 @@ const email = document.getElementById('email').value;
 </body>
 
 </html>
+
 
 
